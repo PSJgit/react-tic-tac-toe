@@ -1,0 +1,75 @@
+
+/* Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#root {
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 60vh;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 84px;
+  height: 84px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 84px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+
+.win, .winning-line {
+  background: green;
+}
+
+
+
+
+
+
+
+
+
